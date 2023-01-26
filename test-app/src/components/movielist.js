@@ -11,19 +11,9 @@ export default class MovieList extends React.Component {
         ]
         return (
             <div>
-                Test
-                {movies.map((movie, index) => (
-
-<Movie
-
-  key={index}
-
-  name={movie.moviename}
-
-
-/>
-
-))}
+                {movies.map((movie, index) => {
+                    return <Movie key={index} movie={movie} />
+                })}
 
             </div>
         )
